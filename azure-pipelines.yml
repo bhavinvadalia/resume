@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'Visual Studio Enterprise(ebb8c1f7-917c-4740-b84b-12f5f82bfbac)'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: '|
+    inlineScript: '
       az --version
       az account show'
 
