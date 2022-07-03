@@ -27,4 +27,4 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       azcopy --version
-      az storage blob directory copy -c $web -s $(Build.ArtifactStagingDirectory) -d https://elstorago2.blob.core.windows.net/
+      az storage blob upload -c $web -f $(Build.ArtifactStagingDirectory)/* -n https://elstorago2.blob.core.windows.net/ --acount-name elstorago2
