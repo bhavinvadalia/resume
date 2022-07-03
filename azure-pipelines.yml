@@ -19,4 +19,4 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       az config set extension.use_dynamic_install=yes_without_prompt
-      az storage azcopy blob upload -c '$web' -s '$(Build.ArtifactStagingDirectory)/*' -d 'https://elstorago2@blob.core.windows.net/' --account-name elstorago2 --recursive
+      az storage azcopy blob upload -c '$web' -s *.yml -d 'https://elstorago2@blob.core.windows.net/' --account-name elstorago2 --recursive
