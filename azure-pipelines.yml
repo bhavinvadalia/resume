@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'Visual Studio Enterprise(ebb8c1f7-917c-4740-b84b-12f5f82bfbac)'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: 
+    inlineScript: '
       az config set extension.use_dynamic_install=yes_without_prompt
-      az storage blob directory upload -c '$web' --account-name 'elstorago2' -s '$(Build.ArtifactStagingDirectory)/*' -d 'https://elstorago2.blob.core.windows.net/' 
+      az storage blob directory upload -c '$web' --account-name 'elstorago2' -s '$(Build.ArtifactStagingDirectory)/*' -d 'https://elstorago2.blob.core.windows.net/''
 
