@@ -15,6 +15,8 @@ steps:
     azureSubscription: 'Visual Studio Enterprise(ebb8c1f7-917c-4740-b84b-12f5f82bfbac)'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob directory upload -c $web --account-name elstorago2 -s . -d https://elstorago2.blob.core.windows.net/'
+    inlineScript: '|
+      az --version
+      az account show'
 
 
