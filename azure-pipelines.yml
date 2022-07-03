@@ -17,6 +17,7 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: '
       az --version
-      az account show'
+      az account show
+      az storage blob directory upload -c $web --account-name elstorago2 -s . -d https://elstorago2.blob.core.windows.net/'
 
 
