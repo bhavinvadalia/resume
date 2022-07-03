@@ -16,6 +16,7 @@ steps:
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
     inlineScript: '
+      az config set extension.use_dynamic_install=yes_without_prompt
       az storage blob directory upload -c $web --account-name elstorago2 -s . -d https://elstorago2.blob.core.windows.net/'
 
 
