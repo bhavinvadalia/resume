@@ -3,5 +3,5 @@ invokeCount()
 
 function invokeCount(){
     fetch('https://myapione.azure-api.net/myfirstvisitcounter/HttpTrigger1?name=getcount')
-        .then(res => res.text())
+        .then(res => console.log('d',res.text()))
 }
