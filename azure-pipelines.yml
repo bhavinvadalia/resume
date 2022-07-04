@@ -20,6 +20,6 @@ steps:
     inlineScript: |
       az config set extension.use_dynamic_install=yes_without_prompt
       az storage azcopy blob upload -c '$web' -s index.html -d index.html --account-name elstorago2
-      az storage azcopy blob upload -c '$web' -s assets -d assets --account-name elstorago2 --recursive
+      az storage azcopy blob upload -c '$web' -s assets -d assets --account-name elstorago2 --recursive=true
       
       
