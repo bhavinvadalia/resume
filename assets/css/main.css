@@ -3314,3 +3314,9 @@ input, select, textarea {
 			}
 
 	}
+.countBox{
+	background-color: #ca614a;
+	padding:10px;
+	color:white;
+	border-radius:50px;
+}
