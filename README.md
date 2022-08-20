@@ -6,3 +6,5 @@ The static files are all hosted in an Azure Storage Container($web directory) an
 At the end of the page, there is a simple visitor counter which displays the number of visits so far to this page.  
 
 The logic for the counter is implemented using Azure Functions Python SDK. Every page load calls the API endpoints within an Azure Functions App exposed through an API Gateway(Azure API Management Service) which gets/updates the current count from an Azure CosmosDB database.
+
+[Access it here] https://resume.plok.work
